@@ -19,6 +19,11 @@ Nexus-OS is a Linux desktop distribution for gaming, creation, and everyday work
 - [Alpha 0 decision record](docs/alpha0.md): what the image spike proved and what remains open.
 - [Alpha 1 platform evaluation](docs/alpha1.md): the next decision point for the operating-system base.
 - [Full Alpha 1 implementation plan](docs/alpha1-full.md): hardware validation, support policy, update/rollback, and compatibility launcher design.
+- [Beta gate checklist](docs/beta-gate.md): the criteria required before a public beta is declared.
+- [Beta release policy](docs/beta-release-policy.md): support policy, security gating, and quality criteria for beta channel releases.
+- [Beta sign-off package](docs/beta-signoff.md): the signed approval package used to decide whether the beta can ship.
+- [Release sign-off checklist](docs/release-signoff-checklist.md): the review checklist used by engineering, product, and support signatories.
+- [Installer and first-boot design](docs/installer-design.md): disk layout, recovery, and first-boot validation plan.
 - [Platform comparison matrix](docs/platform-evaluation.md): weighted decision analysis for Fedora Atomic KDE vs Bazzite.
 - [Update and rollback design](docs/update-rollback.md): staged releases, rollback policy, and signed-asset handling.
 - [Compatibility launcher design](docs/compatibility-launcher.md): policy and runtime selection for native, Proton, Android, and VM workflows.
