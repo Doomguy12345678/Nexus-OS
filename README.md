@@ -16,6 +16,10 @@ Nexus-OS is a Linux desktop distribution for gaming, creation, and everyday work
 
 - [Architecture and feature designs](docs/architecture.md): platform choices, subsystem diagrams, compatibility boundaries, and risks.
 - [Release roadmap](docs/roadmap.md): staged alpha-to-1.0 gates and measurable exit criteria.
+- [Alpha 0 decision record](docs/alpha0.md): what the image spike proved and what remains open.
+- [Alpha 1 platform evaluation](docs/alpha1.md): the next decision point for the operating-system base.
+- [Platform comparison matrix](docs/platform-evaluation.md): weighted decision analysis for Fedora Atomic KDE vs Bazzite.
+- [Hardware qualification template](examples/hardware-qualification.yaml): checklists and telemetry for real-world validation.
 - [Example app catalog entry](examples/catalog-entry.yaml): illustrative metadata for a curated application.
 - [Alpha 0 image spike](os/README.md): build and inspect the first bootc-derived OCI image.
 
@@ -25,4 +29,4 @@ Start with an upstream Fedora Atomic KDE desktop as the evaluation target, using
 
 ## Build status
 
-There is no installer, image, package repository, launcher, or product service in this repository yet. The next engineering milestone is a hardware-backed technical prototype and written architecture decisions, not a claim of feature completeness. See the [roadmap](docs/roadmap.md) for release gates.
+The project has a verified Alpha 0 image spike and is now evaluating the real product base in Alpha 1. The next milestone is a measured comparison against candidate upstream Linux distributions, not a claim of full OS completion. See the [roadmap](docs/roadmap.md) and [Alpha 1 plan](docs/alpha1.md) for release gates.

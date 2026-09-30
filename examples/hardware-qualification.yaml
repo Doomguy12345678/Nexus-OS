@@ -1,0 +1,34 @@
+system:
+  id: example-laptop-01
+  owner: nexus-eng
+  platform: x86_64
+  gpu:
+    vendor: NVIDIA
+    model: RTX 4070
+    driver: nvidia-driver
+  audio:
+    interface: USB Audio Interface
+    sample_rates: [44100, 48000, 96000]
+  display:
+    monitors:
+      - size_inch: 27
+        resolution: "2560x1440"
+      - size_inch: 24
+        resolution: "1920x1080"
+  controllers:
+    - DualSense
+    - XBox Controller
+
+checks:
+  boot_time_seconds: 18.2
+  suspend_resume: pass
+  steam_launch: pass
+  proton_games: ["Cyberpunk 2077", "Helldivers 2"]
+  obs_capture: pass
+  blender_startup: pass
+  daws_startup: ["Ardour"]
+  update_rollback: pass
+  known_issues:
+    - "No issue observed for default cycle"
+
+notes: "This is an example placeholder for the real qualification matrix. Replace with actual hardware and measured values per system."
