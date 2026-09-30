@@ -17,6 +17,7 @@ Nexus-OS is a Linux desktop distribution for gaming, creation, and everyday work
 - [Architecture and feature designs](docs/architecture.md): platform choices, subsystem diagrams, compatibility boundaries, and risks.
 - [Release roadmap](docs/roadmap.md): staged alpha-to-1.0 gates and measurable exit criteria.
 - [Example app catalog entry](examples/catalog-entry.yaml): illustrative metadata for a curated application.
+- [Alpha 0 image spike](os/README.md): build and inspect the first bootc-derived OCI image.
 
 ## Initial platform proposal
 
