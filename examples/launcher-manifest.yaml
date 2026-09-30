@@ -1,0 +1,24 @@
+name: Cyberpunk 2077
+id: game.cyberpunk2077
+kind: windows-game
+runtime: proton
+launcher:
+  source: steam
+  app_id: "1091500"
+  compatibility_mode: proton-ge
+  anti_cheat: true
+policy:
+  status: supported-with-notes
+  notes:
+    - "Requires Proton configuration and tested NVIDIA profile"
+    - "Anti-cheat and online services may be restricted"
+  supported_gpu:
+    - NVIDIA
+    - AMD
+  required_vendor_drivers: ["nvidia", "mesa"]
+  user_consent_required: true
+
+install:
+  prefix_isolation: per-app
+  backup_before_run: true
+  uninstall_supported: true

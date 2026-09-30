@@ -18,8 +18,12 @@ Nexus-OS is a Linux desktop distribution for gaming, creation, and everyday work
 - [Release roadmap](docs/roadmap.md): staged alpha-to-1.0 gates and measurable exit criteria.
 - [Alpha 0 decision record](docs/alpha0.md): what the image spike proved and what remains open.
 - [Alpha 1 platform evaluation](docs/alpha1.md): the next decision point for the operating-system base.
+- [Full Alpha 1 implementation plan](docs/alpha1-full.md): hardware validation, support policy, update/rollback, and compatibility launcher design.
 - [Platform comparison matrix](docs/platform-evaluation.md): weighted decision analysis for Fedora Atomic KDE vs Bazzite.
+- [Update and rollback design](docs/update-rollback.md): staged releases, rollback policy, and signed-asset handling.
+- [Compatibility launcher design](docs/compatibility-launcher.md): policy and runtime selection for native, Proton, Android, and VM workflows.
 - [Hardware qualification template](examples/hardware-qualification.yaml): checklists and telemetry for real-world validation.
+- [Compatibility launcher manifest](examples/launcher-manifest.yaml): example launch policy for a Windows game or creator tool.
 - [Example app catalog entry](examples/catalog-entry.yaml): illustrative metadata for a curated application.
 - [Alpha 0 image spike](os/README.md): build and inspect the first bootc-derived OCI image.
 
