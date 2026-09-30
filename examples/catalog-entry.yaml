@@ -1,0 +1,23 @@
+schema_version: 1
+id: org.example.Blender
+name: Blender
+category: 3d-creation
+runtime: flatpak
+source:
+  kind: flathub
+  app_id: org.blender.Blender
+  publisher_verified: false
+support:
+  status: illustrative
+  tested_versions: []
+  notes: "Example only. Verify publisher, permissions, and current distribution source before production use."
+capabilities:
+  - opengl
+  - vulkan
+permissions:
+  - graphics
+  - removable-media
+install:
+  user_consent_required: true
+  privileged: false
+  uninstall_supported: true
