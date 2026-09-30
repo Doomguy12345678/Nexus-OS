@@ -23,6 +23,15 @@ Nexus-OS is a Linux desktop distribution for gaming, creation, and everyday work
 - [Beta release policy](docs/beta-release-policy.md): support policy, security gating, and quality criteria for beta channel releases.
 - [Beta sign-off package](docs/beta-signoff.md): the signed approval package used to decide whether the beta can ship.
 - [Release sign-off checklist](docs/release-signoff-checklist.md): the review checklist used by engineering, product, and support signatories.
+- [Beta launch artifacts](docs/beta-launch-artifacts.md): release notes, support matrix, known issues, and beta communication package.
+- [Product implementation blueprint](docs/product-implementation-blueprint.md): the product architecture for the first public-facing beta.
+- [Release backlog](docs/release-backlog.md): prioritized tasks for Beta readiness and the next delivery milestones.
+- [Milestone plan](docs/milestone-plan.md): the phased project progression from Alpha 0 to 1.0.
+- [Beta execution tracker](docs/beta-execution-tracker.md): sprint-based delivery plan with owners and release gates.
+- [Release risk register](docs/release-risk-register.md): the active risk list and mitigation ownership for the Beta release.
+- [Release owner matrix](docs/release-owner-matrix.md): the governance model and decision ownership for Beta readiness.
+- [Beta sprint board](docs/beta-sprint-board.md): the weekly execution plan for the Beta program.
+- [Beta release bundle](docs/beta-release-bundle.md): the user-facing release notes, support matrix, and beta agreement package.
 - [Installer and first-boot design](docs/installer-design.md): disk layout, recovery, and first-boot validation plan.
 - [Platform comparison matrix](docs/platform-evaluation.md): weighted decision analysis for Fedora Atomic KDE vs Bazzite.
 - [Update and rollback design](docs/update-rollback.md): staged releases, rollback policy, and signed-asset handling.

@@ -1,0 +1,31 @@
+beta:
+  channel: beta
+  platform: Fedora Atomic KDE
+  support_status: limited-public-beta
+  required_evidence:
+    - base-platform-selection
+    - hardware-matrix
+    - rollback-proof
+    - signed-artifacts
+    - support-policy
+  app_catalog:
+    default_mode: curated-flatpak-first
+    compatibility:
+      native: preferred
+      proton: supported-with-notes
+      waydroid: experimental
+      vm: legal-only
+  profiles:
+    gaming:
+      enabled: true
+      performance_tuning: reversible
+    studio:
+      enabled: true
+      audio_policy: pipewire-first
+    creator:
+      enabled: true
+      multi_monitor: supported
+  release_policy:
+    known_issues_required: true
+    support_owner_required: true
+    recovery_documentation_required: true
