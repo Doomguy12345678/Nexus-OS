@@ -23,16 +23,22 @@ Use the weighted comparison in [platform-evaluation.md](platform-evaluation.md) 
 
 A supportable distro must be proven on hardware. The Alpha 1 stage requires a real matrix, not a speculative list.
 
-### Minimum hardware classes
+### Minimum hardware classes and priority
 
-- AMD desktop GPU
-- Intel integrated or discrete laptop GPU
-- NVIDIA desktop GPU
-- NVIDIA laptop GPU if the project intends to support laptops in the beta plan
+Begin with one representative x86-64 laptop using Intel integrated graphics as the reference system. Record the exact laptop model, CPU and iGPU generation, firmware, driver, wireless devices, and connected peripherals; results apply only to that tested configuration.
+
+Then qualify the broader pre-Beta matrix:
+
+- additional Intel laptop generations and hybrid-graphics configurations
+- AMD desktop GPU systems
+- NVIDIA desktop GPU systems
+- NVIDIA laptop systems if laptop support is in the Beta scope
 - USB audio interface
 - MIDI controller
 - Bluetooth headset or controller
 - multi-monitor desktop setup
+
+Intel-first is a sequencing decision based on the initial target-user profile. It does not restrict product support or waive validation of AMD and NVIDIA systems before publishing claims for those classes.
 
 ### Required test categories
 

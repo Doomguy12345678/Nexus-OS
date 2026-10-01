@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-bootc:43
+FROM quay.io/fedora/fedora-bootc:44@sha256:62e0fe047be7b9c00abab3911fc84f8a22b2b2e097a6ca76119ebe395a6da3bf
 
 LABEL org.opencontainers.image.title="Nexus-OS Alpha 0 image spike"
 LABEL org.opencontainers.image.description="Minimal bootc image to validate the Nexus-OS image build path"

@@ -40,14 +40,16 @@ The Beta launch artifacts package gives the project the documentation required t
 
 ## Support matrix template
 
+No physical qualification records are currently available. Treat this as an unpublished planning template, not a statement of Beta support. The first qualification target is an Intel integrated-graphics laptop; all other classes remain in the pre-Beta validation matrix.
+
 | Hardware class | Status | Notes |
 |---|---|---|
-| AMD desktop | Supported | Confirmed driver path and Steam flow |
-| Intel desktop | Supported | Confirmed with VA-API and desktop stability |
-| NVIDIA desktop | Supported with notes | Vendor driver path and Vulkan validation required |
-| AMD laptop | Supported with notes | Thermal and suspend checks required |
-| Intel laptop | Experimental | dependent on display and suspend validation |
-| NVIDIA laptop | Experimental | may require vendor-specific driver validation |
+| Intel integrated-graphics laptop (reference target) | Not qualified | First physical test target; exact model and evidence pending |
+| Additional Intel laptop generations and hybrid graphics | Not qualified | Validate per laptop/GPU/driver configuration |
+| AMD desktop | Not qualified | Driver path and Steam workflow untested |
+| NVIDIA desktop | Not qualified | Vendor driver and Vulkan validation untested |
+| AMD laptop | Not qualified | Thermal and suspend checks untested |
+| NVIDIA laptop | Not qualified | Vendor driver, suspend, and hybrid graphics checks untested |
 
 ## Known issues log
 

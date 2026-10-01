@@ -1,0 +1,239 @@
+schema_version: 1
+system:
+  id: lenovo-chromebook-phaser-rev4
+  owner: null
+  tested_at_utc: null
+  current_boot:
+    device: Ventoy USB storage (user-reported; multi-ISO)
+    mode: UEFI boot (confirmed by /sys/firmware/efi)
+    root_mount:
+      source: overlay
+      filesystem: overlay
+      interpretation: "Consistent with a live-session overlay; backing device not identified by this output."
+  media_trials:
+    - filename: Fedora-Kinoite-ostree-x86_64-44-1.7.iso
+      observation: "User reports boot menu entries Install Fedora and Troubleshoot; no live/try option identified."
+      live_smoke_test: unavailable_from_observed_menu
+    - filename: Fedora-KDE-Desktop-Live-44-1.7.x86_64.iso
+      observation: "User reports reaching the Fedora desktop after booting the Live ISO from Ventoy."
+      live_smoke_test: in_progress
+      smoke_results:
+        wifi_connectivity: pass
+        audio_output: pass
+        keyboard_touchpad: pass
+        brightness_controls:
+          overall: partial
+          system_tray_slider: pass
+          keyboard_shortcuts: fail
+        suspend_resume: pass
+        opengl_direct_rendering: pass
+        opengl_renderer: Mesa Intel(R) UHD Graphics 600 (GLK2), same as Mint
+        video_playback_720p: pass
+        video_playback_1080p: pass
+        reported_by: user
+        evidence: evidence/fedora-kde-live-smoke.md
+  base:
+    distribution: Linux Mint Debian Edition (LMDE)
+    release: LMDE 7 (Gigi), Debian 13 (Trixie)
+    image_digest: null
+    kernel: 6.12.48+deb13-amd64
+  hardware:
+    architecture: x86_64
+    system_model: Lenovo Chromebook PHASER360
+    model_number: KSB-B3K-F47-B3S-N8A-I8Q-C2A-A2A-Q87
+    board: Phaser, revision 4
+    cpu: Intel Celeron N4000, dual-core, 64-bit
+    memory_gib:
+      total: 3.7
+      used_at_inventory: 1.1
+      free_at_inventory: 1.8
+      available_at_inventory: 2.6
+      shared_at_inventory: 0.13
+      buff_cache_at_inventory: 1.1
+    network_adapters:
+      - interface: wlp0s12f0
+        detection: reported
+        connectivity_test: pass
+    gpus:
+      - vendor: Intel
+        model: Gemini Lake UHD Graphics 600
+        driver: i915 (kernel)
+    storage_devices:
+      devices:
+        - name: loop0
+          size: 2.3G
+          type: loop
+          model: null
+          transcription_note: "Interpreted from garbled pasted text; verify against raw lsblk output."
+        - name: sda
+          size: 116.1G
+          type: disk
+          model: USB Disk
+        - name: sda1
+          size: 116G
+          type: part
+          model: null
+        - name: sda2
+          size: 32M
+          type: part
+          model: null
+        - name: mmcblk0
+          size: 29.1G
+          type: disk
+          model: null
+        - name: mmcblk0p1
+          size: 20.9G
+          type: part
+          model: null
+        - name: mmcblk0p2
+          size: 32M
+          type: part
+          model: null
+        - name: mmcblk0p3
+          size: 4G
+          type: part
+          model: null
+        - name: mmcblk0p4
+          size: 32M
+          type: part
+          model: null
+        - name: mmcblk0p5
+          size: 4G
+          type: part
+          model: null
+        - name: mmcblk0p6
+          size: 512B
+          type: part
+          model: null
+        - name: mmcblk0p7
+          size: 512B
+          type: part
+          model: null
+        - name: mmcblk0p8
+          size: 16M
+          type: part
+          model: null
+        - name: mmcblk0p9
+          size: 512B
+          type: part
+          model: null
+        - name: mmcblk0p10
+          size: 512B
+          type: part
+          model: null
+        - name: mmcblk0p11
+          size: 8M
+          type: part
+          model: null
+        - name: mmcblk0p12
+          size: 32M
+          type: part
+          model: null
+        - name: mmcblk0boot0
+          size: 4M
+          type: disk
+          model: null
+        - name: mmcblk0boot1
+          size: 4M
+          type: disk
+          model: null
+    audio_interfaces:
+      - name: Celeron/Pentium Silver Processor High Definition Audio
+        output: Speaker
+        volume_at_observation: 0.40
+        playback_test: pass
+    midi_devices: []
+    displays: []
+    controllers: []
+  desktop:
+    environment: Cinnamon 6.4.13
+    window_manager: Muffin 6.4.1
+    toolkit: GTK 3.24.49
+checks:
+  boot_first_login:
+    critical: true
+    status: not-run
+    evidence: null
+  graphics_api:
+    critical: true
+    status: blocked
+    evidence:
+      - evidence/live-session-smoke.md
+  vulkan_api:
+    critical: false
+    status: blocked
+    evidence:
+      - evidence/live-session-smoke.md
+  opengl_direct_rendering:
+    critical: false
+    status: pass
+    evidence:
+      - evidence/live-session-smoke.md
+  update_rollback:
+    critical: true
+    status: not-run
+    evidence: null
+  suspend_resume:
+    critical: false
+    status: pass
+    evidence:
+      - evidence/live-session-smoke.md
+  wifi_connectivity:
+    critical: false
+    status: pass
+    evidence:
+      - evidence/live-session-smoke.md
+  audio_output:
+    critical: false
+    status: pass
+    evidence:
+      - evidence/live-session-smoke.md
+  keyboard_touchpad:
+    critical: false
+    status: pass
+    evidence:
+      - evidence/live-session-smoke.md
+  brightness_controls:
+    critical: false
+    status: pass
+    evidence:
+      - evidence/live-session-smoke.md
+  multi_monitor:
+    critical: false
+    status: not-run
+    evidence: null
+  controller_mapping:
+    critical: false
+    status: not-run
+    evidence: null
+  audio_routing_latency:
+    critical: false
+    status: not-run
+    evidence: null
+  obs_capture:
+    critical: false
+    status: not-run
+    evidence: null
+  blender_render:
+    critical: false
+    status: not-run
+    evidence: null
+  daw_workflow:
+    critical: false
+    status: not-run
+    evidence: null
+applications: []
+known_issues: []
+notes: >-
+  Draft inventory populated from user-reported inxi, free, lsblk, and os-release
+  output. Storage entries have been mapped from the pasted table; the loop0
+  line was partially garbled and should be checked against raw output. Exact
+  Lenovo retail model, firmware, wireless hardware, and test evidence are not
+  yet known. USB boot is user-reported; UEFI boot was confirmed by the presence
+  of /sys/firmware/efi. The root mount was reported as overlay/overlay,
+  consistent with a live session but not identifying the backing device.
+  Wi-Fi connectivity and speaker playback were user-confirmed working in the
+  live session; see evidence/live-session-smoke.md. Memory values are a point-in-time
+  snapshot. This record is not a
+  hardware qualification or Nexus-OS support claim. The current system is LMDE
+  and is not the proposed Fedora Atomic KDE baseline.

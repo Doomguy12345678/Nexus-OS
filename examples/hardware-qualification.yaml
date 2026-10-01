@@ -1,34 +1,65 @@
+schema_version: 1
 system:
-  id: example-laptop-01
-  owner: nexus-eng
-  platform: x86_64
-  gpu:
-    vendor: NVIDIA
-    model: RTX 4070
-    driver: nvidia-driver
-  audio:
-    interface: USB Audio Interface
-    sample_rates: [44100, 48000, 96000]
-  display:
-    monitors:
-      - size_inch: 27
-        resolution: "2560x1440"
-      - size_inch: 24
-        resolution: "1920x1080"
-  controllers:
-    - DualSense
-    - XBox Controller
+  id: TBD
+  owner: TBD
+  tested_at_utc: null
+  base:
+    distribution: Fedora Atomic KDE
+    release: null
+    image_digest: null
+    kernel: null
+  hardware:
+    architecture: x86_64
+    system_model: null
+    cpu: null
+    gpus: []
+    audio_interfaces: []
+    midi_devices: []
+    displays: []
+    controllers: []
 
 checks:
-  boot_time_seconds: 18.2
-  suspend_resume: pass
-  steam_launch: pass
-  proton_games: ["Cyberpunk 2077", "Helldivers 2"]
-  obs_capture: pass
-  blender_startup: pass
-  daws_startup: ["Ardour"]
-  update_rollback: pass
-  known_issues:
-    - "No issue observed for default cycle"
+  boot_first_login:
+    critical: true
+    status: not-run
+    evidence: null
+  graphics_api:
+    critical: true
+    status: not-run
+    evidence: null
+  update_rollback:
+    critical: true
+    status: not-run
+    evidence: null
+  suspend_resume:
+    critical: false
+    status: not-run
+    evidence: null
+  multi_monitor:
+    critical: false
+    status: not-run
+    evidence: null
+  controller_mapping:
+    critical: false
+    status: not-run
+    evidence: null
+  audio_routing_latency:
+    critical: false
+    status: not-run
+    evidence: null
+  obs_capture:
+    critical: false
+    status: not-run
+    evidence: null
+  blender_render:
+    critical: false
+    status: not-run
+    evidence: null
+  daw_workflow:
+    critical: false
+    status: not-run
+    evidence: null
 
-notes: "This is an example placeholder for the real qualification matrix. Replace with actual hardware and measured values per system."
+applications: []
+known_issues: []
+notes: "Blank template only. Replace TBD/null values and attach test evidence; this file makes no support claim."

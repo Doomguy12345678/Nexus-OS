@@ -1,0 +1,33 @@
+name: Alpha 0 image smoke test
+
+on:
+  push:
+    paths:
+      - "os/**"
+      - ".github/workflows/alpha0-image.yml"
+  pull_request:
+    paths:
+      - "os/**"
+      - ".github/workflows/alpha0-image.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build Alpha 0 image
+        run: bash os/build.sh
+
+      - name: Verify bootc entry point
+        run: docker run --rm --entrypoint bootc localhost/nexus-os:alpha0 --version
+
+      - name: Verify image metadata
+        run: |
+          title="$(docker image inspect --format '{{index .Config.Labels "org.opencontainers.image.title"}}' localhost/nexus-os:alpha0)"
+          test "$title" = "Nexus-OS Alpha 0 image spike"

@@ -1,0 +1,51 @@
+# Illustrative candidates only; entries are not compatibility or support claims.
+apps:
+  - id: game.cyberpunk2077
+    name: Cyberpunk 2077
+    kind: gaming
+    description: Candidate entry requiring validation against a pinned game build and hardware.
+    default_runtime: proton
+    runtimes:
+      - name: proton
+        status: unverified
+        notes: Validate launch, graphics, controller, suspend, and update behavior.
+
+  - id: creator.blender
+    name: Blender
+    kind: 3d-creation
+    description: Candidate entry requiring validation on the target Nexus-OS image.
+    default_runtime: native
+    runtimes:
+      - name: native
+        status: unverified
+        notes: Validate rendering backends, GPU acceleration, and project workflows.
+
+  - id: video.obs-studio
+    name: OBS Studio
+    kind: video
+    description: Candidate entry requiring capture and streaming workflow validation.
+    default_runtime: native
+    runtimes:
+      - name: native
+        status: unverified
+        notes: Validate capture devices, audio routing, encoding, and multi-monitor use.
+
+  - id: audio.reaper
+    name: REAPER
+    kind: audio
+    description: Candidate entry requiring DAW and device workflow validation.
+    default_runtime: native
+    runtimes:
+      - name: native
+        status: unverified
+        notes: Validate audio interfaces, low-latency operation, plugins, and project interchange.
+
+  - id: productivity.libreoffice
+    name: LibreOffice
+    kind: productivity
+    description: Candidate entry requiring everyday desktop workflow validation.
+    default_runtime: native
+    runtimes:
+      - name: native
+        status: unverified
+        notes: Validate document fidelity, fonts, printing, and file interchange.

@@ -6,7 +6,7 @@
 
 Nexus-OS is a curated Linux distribution, not a compatibility reimplementation of Windows, macOS, and Android. The host remains Linux. Native Linux applications are the default; compatibility runtimes and virtual machines are isolated, optional integrations. No compatibility claim is made without a tested application, hardware, and runtime matrix.
 
-The initial product target is x86-64 UEFI PCs with supported AMD, Intel, and NVIDIA graphics. ARM64 can follow after the application and driver matrix is viable. Establish a modest minimum specification only after boot, GPU, audio, suspend, and creator-workflow tests on real hardware.
+The initial qualification reference is an x86-64 UEFI laptop with Intel integrated graphics, reflecting the project's first target-user profile. This is a validation priority, not an Intel-only product policy or a support claim. Keep AMD and NVIDIA systems in the required pre-Beta matrix; ARM64 can follow after the application and driver matrix is viable. Establish a modest minimum specification only after boot, GPU, audio, suspend, and creator-workflow tests on real hardware.
 
 ### System context
 

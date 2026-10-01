@@ -17,6 +17,7 @@ docker image inspect localhost/nexus-os:alpha0
 docker run --rm --entrypoint bootc localhost/nexus-os:alpha0 --version
 ```
 
-Set `NEXUS_PLATFORM=linux/arm64` to test another OCI architecture if the upstream base supports it. This does not establish Nexus-OS hardware support.
+The base is pinned to Fedora bootc 44's multi-architecture manifest digest. Set `NEXUS_PLATFORM=linux/arm64` to build another OCI architecture from that same pinned manifest if the upstream image supports it. This does not establish Nexus-OS hardware support.
 
-The Fedora 43 tag is a discovery-stage input, not a release pin. Before CI or distribution, pin the upstream image by digest, automate reviewed updates to that pin, record build provenance/SBOM, and sign outputs. Do not install this image on a physical machine.
+The Alpha 0 CI workflow builds the image and checks that its bootc entry point and metadata are present. This is a build smoke test, not a boot test, desktop image, installer, or update/rollback test. Before distribution, automate reviewed base-digest updates, record build provenance/SBOM, and sign outputs. Never install this Alpha 0 image on a physical machine.
+${/^$/d;}

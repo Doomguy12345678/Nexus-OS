@@ -9,6 +9,7 @@ Nexus-OS is a Linux desktop distribution for gaming, creation, and everyday work
 - Build on a supported Linux distribution and upstream desktop; do not fork the kernel or desktop to establish product identity.
 - Keep the operating-system image small and mostly immutable. Install desktop applications separately and make system changes transactional and reversible.
 - Treat compatibility as a per-application capability, not a promise that every Windows, macOS, or Android application works.
+- Qualify a representative Intel integrated-graphics laptop first, then broaden hardware coverage; this is a test priority, not an Intel-only product policy.
 - Prefer upstream components, documented interfaces, signed artifacts, and reproducible builds.
 - Offer creator reliability and predictable latency without making gaming tweaks the default for every workload.
 
@@ -32,11 +33,16 @@ Nexus-OS is a Linux desktop distribution for gaming, creation, and everyday work
 - [Release owner matrix](docs/release-owner-matrix.md): the governance model and decision ownership for Beta readiness.
 - [Beta sprint board](docs/beta-sprint-board.md): the weekly execution plan for the Beta program.
 - [Beta release bundle](docs/beta-release-bundle.md): the user-facing release notes, support matrix, and beta agreement package.
+- [Beta launch runbook](docs/beta-launch-runbook.md): the final operational procedure for a controlled Beta launch.
+- [Final Beta decision memo](docs/final-beta-decision-memo.md): the release decision record and approval gate.
+- [Project issue board](docs/project-issue-board.md): the concrete issue backlog behind the Beta program.
 - [Installer and first-boot design](docs/installer-design.md): disk layout, recovery, and first-boot validation plan.
 - [Platform comparison matrix](docs/platform-evaluation.md): weighted decision analysis for Fedora Atomic KDE vs Bazzite.
 - [Update and rollback design](docs/update-rollback.md): staged releases, rollback policy, and signed-asset handling.
 - [Compatibility launcher design](docs/compatibility-launcher.md): policy and runtime selection for native, Proton, Android, and VM workflows.
+- [Compatibility candidate matrix](examples/app_catalog.yaml): illustrative gaming, creation, video, audio, and productivity entries, all awaiting qualification.
 - [Hardware qualification template](examples/hardware-qualification.yaml): checklists and telemetry for real-world validation.
+- [Hardware qualification procedure](docs/hardware-qualification-procedure.md): evidence capture and support-tier decision rules for each physical test system.
 - [Compatibility launcher manifest](examples/launcher-manifest.yaml): example launch policy for a Windows game or creator tool.
 - [Example app catalog entry](examples/catalog-entry.yaml): illustrative metadata for a curated application.
 - [Alpha 0 image spike](os/README.md): build and inspect the first bootc-derived OCI image.

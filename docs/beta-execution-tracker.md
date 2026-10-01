@@ -18,8 +18,8 @@ This tracker converts the release backlog into a week-by-week execution plan wit
 | Task | Owner | Priority | Status | Evidence required |
 |---|---|---:|---|---|
 | Freeze chosen base platform | Engineering | P0 | Planned | signed decision record |
-| Qualify AMD hardware path | QA | P0 | Planned | hardware test matrix |
-| Qualify Intel hardware path | QA | P0 | Planned | hardware test matrix |
+| Qualify Intel laptop reference system | QA | P0 | Planned | completed hardware record and evidence |
+| Qualify additional Intel, AMD, and NVIDIA paths | QA | P0 | Planned | hardware test matrix before Beta claims |
 | Qualify NVIDIA hardware path | QA | P0 | Planned | driver validation |
 | Validate suspend/resume and audio routing | Platform | P0 | Planned | pass/fail report |
 
