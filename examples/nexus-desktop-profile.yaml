@@ -1,0 +1,50 @@
+name: Nexus-OS
+desktop: kde-plasma
+base_image: fedora-kinoite
+default_mode: creator
+supported_modes:
+  - gaming
+  - creator
+  - studio
+  - productivity
+supported_runtimes:
+  - native
+  - proton
+install_policy: flatpak-first
+update_model: fedora-atomic
+notes: >-
+  Nexus-OS starts from an upstream Fedora Atomic KDE base and keeps the product
+  layer explicit, minimal, and evidence-driven.
+mode_profiles:
+  gaming:
+    name: gaming
+    default_runtime: proton
+    tune_profile: low-latency
+    default_apps:
+      - steam
+      - heroic
+    notes: Low-latency gaming defaults with Proton-first compatibility policy.
+  creator:
+    name: creator
+    default_runtime: native
+    tune_profile: creator-balanced
+    default_apps:
+      - obs-studio
+      - blender
+    notes: Creator defaults focus on capture, editing, and multi-monitor work.
+  studio:
+    name: studio
+    default_runtime: native
+    tune_profile: audio-stable
+    default_apps:
+      - reaper
+      - ardour
+    notes: Studio defaults prioritize device routing, low latency, and predictable audio.
+  productivity:
+    name: productivity
+    default_runtime: native
+    tune_profile: balanced
+    default_apps:
+      - libreoffice
+      - firefox
+    notes: Productivity defaults favor a clean, familiar desktop workflow.

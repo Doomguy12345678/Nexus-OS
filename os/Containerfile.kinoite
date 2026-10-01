@@ -1,0 +1,6 @@
+FROM quay.io/fedora-ostree-desktops/kinoite:44@sha256:de57a100fa68cd6d683a318f6c3b550bd09db5c1958eb1e03f81d52418316a48
+
+LABEL org.opencontainers.image.title="Nexus-OS KDE Atomic desktop candidate"
+LABEL org.opencontainers.image.description="Metadata-only candidate derived from Fedora Kinoite 44"
+LABEL org.opencontainers.image.base.name="quay.io/fedora-ostree-desktops/kinoite:44"
+LABEL org.opencontainers.image.base.digest="sha256:de57a100fa68cd6d683a318f6c3b550bd09db5c1958eb1e03f81d52418316a48"
