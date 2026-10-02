@@ -43,6 +43,7 @@ Nexus-OS is a Linux desktop distribution for gaming, creation, and everyday work
 - [Compatibility candidate matrix](examples/app_catalog.yaml): illustrative gaming, creation, video, audio, and productivity entries, all awaiting qualification.
 - [Hardware qualification template](examples/hardware-qualification.yaml): checklists and telemetry for real-world validation.
 - [Hardware qualification procedure](docs/hardware-qualification-procedure.md): evidence capture and support-tier decision rules for each physical test system.
+- [First hardware qualification](qualification/lenovo-chromebook-phaser-rev4/qualification.md): the PHASER360 evidence ledger, workload checks, unsupported scope, and Alpha 1 gate.
 - [Compatibility launcher manifest](examples/launcher-manifest.yaml): example launch policy for a Windows game or creator tool.
 - [Example app catalog entry](examples/catalog-entry.yaml): illustrative metadata for a curated application.
 - [Alpha 0 image spike](os/README.md): build and inspect the first bootc-derived OCI image.

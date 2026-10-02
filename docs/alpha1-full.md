@@ -54,6 +54,15 @@ Intel-first is a sequencing decision based on the initial target-user profile. I
 - controller detection and mapping
 - audio device routing and latency test
 
+The first reference-system checklist and decision record is
+[the Lenovo Chromebook PHASER360 qualification](../qualification/lenovo-chromebook-phaser-rev4/qualification.md).
+Its existing Fedora/LMDE smoke observations are not Nexus-OS passes. Alpha 1
+must not mark this system supported until its exact Nexus-OS image passes the
+boot, network, graphics, audio, suspend/resume, and update/rollback checks and
+the explicitly scoped Steam/Proton and Blender CPU-render profiles recorded
+there. The document's unsupported list remains in force until separate
+evidence qualifies additional hardware or workloads.
+
 ### Hardware qualification scoring
 
 Each system receives a status:
